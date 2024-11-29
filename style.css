@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav.row{
+    display: flex;
+    
+    
+}
+nav{
+    background: #081621;
+}
+nav .container{
+    width: 700px;
+    margin: auto;
+    height: 25px;
+    
+}
+nav ul {
+    list-style-type: none;
+    
+}
+nav ul li{
+    display: inline-block;
+    
+    
+}
+nav ul li a{
+    color: #fff;
+    padding: 10px 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    position: relative;
+}
+nav ul li a:hover{
+color: orange;
+}
+nav ul li a::before{
+content: '';
+position: absolute;
+width: 0%;
+height: 2px;
+background-color: orange;
+bottom: 0;
+left: 0;
+transition: 0.5s;
+}
+nav ul li a:hover::before{
+width: 100%;
+}
+nav .first_menu{
+    position: relative;
+}
+nav .first_menu_child{
+    position: absolute;
+    color: #fff;
+    background: #000;
+    width: 200px;
+    visibility: ;
+    opacity: 0;
+}
+nav .first_menu_child li{
+    width: 200px;
+    padding: 10px;
+}
+nav .first_menu_child li a{
+    display: block;
+}
+nav .first_menu:hover .first_menu_child{
+    visibility: visible;
+    opacity: 1;
+    margin: 0;
+    transition: 0.7s
+}
+nav .phone_menu{
+    position: relative;
+}
+nav .phone_menu_child{
+    position: absolute;
+    color: #fff;
+    background: #000;
+    width: 300px;
+    visibility: ;
+    opacity: 0;
+}
+nav .phone_menu_child li{
+    width: 200px;
+    padding: 5px;
+}
+nav .phone_menu_child li a{
+    display: inline-block;
+}
+nav .phone_menu:hover .phone_menu_child{
+    visibility: visible;
+    opacity: 1;
+    margin: 0;
+    transition: 0.7s;
+}
+nav .component_menu{
+    position: relative;
+}
+nav .component_menu_child{
+    position: absolute;
+    color: #fff;
+    background: #000;
+    width: 200px;
+    visibility: ;
+    opacity: 0;
+}
+nav .component_menu_child li{
+    width: 200px;
+    padding: 5px;
+}
+nav .component_menu_child li a{
+    display: inline-block;
+}
+nav .component_menu:hover .component_menu_child{
+    visibility: visible;
+    opacity: 1;
+    margin: 0;
+    transition: 0.7s;
+}
+nav .component_submenu{
+    position: relative;
+}
+nav .component_submenu_child{
+    position: absolute;
+    color: #fff;
+    background: #000;
+    width: 60%;
+    visibility: ;
+    opacity: 0;
+}
+nav .component_submenu_child li{
+    padding: 5px;
+}
+nav .component_submenu_child li a{
+    display: inline-block;
+}
+nav .component_submenu:hover .component_submenu_child{
+    visibility: visible;
+    opacity: 1;
+    margin: 0;
+    transition: 0.7s;
+    left: 100%;
+    top: 0;
+}
